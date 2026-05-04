@@ -2,7 +2,7 @@ const vscode = require("vscode");
 const fs = require("fs");
 const path = require("path");
 const ejs = require("ejs");
-const ModulerBuilder = require(__dirname + "/moduler-builder.dist.js");
+const ModulerBuilder = require(__dirname + "/ModulerBuilder.dist.js");
 
 module.exports = {
   deactivate: function () {},

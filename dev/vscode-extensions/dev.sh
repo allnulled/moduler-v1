@@ -11,6 +11,7 @@ refrescador \
   -i "**/tests/**/*" \
   -i "**/*.dist.*" \
   -i "**/extension.js" \
+  -d 0 \
   -e "sh" \
   -e "ts" \
   -e "tsx" \
