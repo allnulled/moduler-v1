@@ -87,6 +87,7 @@
     ]
   },
   "dependencies": {
-    "ejs": "^5.0.2"
+    "ejs": "^5.0.2",
+    "js-beautify": "^1.15.4"
   }
 }

@@ -1,1 +1,1 @@
-require(__dirname + "/../test/index.js");
+module.exports = require(__dirname + "/../test/index.js");

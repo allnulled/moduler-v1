@@ -19,5 +19,6 @@ refrescador \
   -e "css" \
   -e "html" \
   -p "3004" \
-  -x "bash $(pwd)/build.sh @{refrescador.file}" \
-  -x "bash $(pwd)/test.sh @{refrescador.file}"
+  -x 'cp "$(pwd)/ejs-syntax-for-html-js-and-css/src/extension.entry.js" "$(pwd)/ejs-syntax-for-html-js-and-css/src/extension.dist.js"' \
+  -x 'bash "$(pwd)/build.sh" "@{refrescador.file}"' \
+  -x 'bash "$(pwd)/test.sh" "@{refrescador.file}"'

@@ -1,1 +1,3 @@
-require(__dirname + "/lib/moduler-builder.js").from(`${__dirname}/..`).build();
+module.exports = function(file, relfile, projectRoot, modulerBuilder) {
+  return modulerBuilder.build();
+};

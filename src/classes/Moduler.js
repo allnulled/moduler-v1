@@ -1,4 +1,4 @@
-class Moduler {
+module.exports = class Moduler {
   constructor(basedir) {
     this.basedir = basedir;
     this.modules = {};

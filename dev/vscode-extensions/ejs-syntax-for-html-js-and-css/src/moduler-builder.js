@@ -14,12 +14,12 @@ module.exports = class ModulerBuilder {
   }
 
   logreturn(args) {
-    // console.log(args);
+    console.log(args);
     return args;
   }
 
   subpath(...subpaths) {
-    return path.resolve(this.basedir, ...subpaths);
+    return this.logreturn(path.resolve(this.basedir, ...subpaths));
   }
 
   getParameters(extra = {}) {

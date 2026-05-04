@@ -1,3 +1,6 @@
+<% console.log(1, modulerBuilder.basedir) %>
+<% console.log(2, modulerBuilder.basedir) %>
+<% console.log(3, modulerBuilder.basedir) %>
+<% console.log(4, modulerBuilder.basedir) %>
 
-
-module.exports = <%-modulerBuilder.includeTemplate("src/classes/Moduler.js")%>;
+module.exports = <%-modulerBuilder.includeModuleExportsContent("src/classes/Moduler.js")%>;
