@@ -1,0 +1,20 @@
+const fs = require("fs");
+const path = require("path");
+const ejs = require("ejs");
+const jsbeautify = require("js-beautify");
+
+module.exports = class ModulerBuilder {
+  static from = <%-modulerBuilder.includeModuleExportsContent("dev/lib/ModulerBuilder/from.js") %>;
+  static signals = {
+    Return: <%-modulerBuilder.includeModuleExportsContent("dev/lib/ModulerBuilder/signals.Return.js") %>,
+  };
+  constructor(basedir) {
+    this.basedir = basedir;
+  }
+  subpath = <%-modulerBuilder.includeModuleExportsContent("dev/lib/ModulerBuilder/prototype.subpath.js") %>;
+  getParameters = <%-modulerBuilder.includeModuleExportsContent("dev/lib/ModulerBuilder/prototype.getParameters.js") %>;
+  build = <%-modulerBuilder.includeModuleExportsContent("dev/lib/ModulerBuilder/prototype.build.js") %>;
+  includeTemplate = <%-modulerBuilder.includeModuleExportsContent("dev/lib/ModulerBuilder/prototype.build.js") %>;
+  includeModuleExportsContent = <%-modulerBuilder.includeModuleExportsContent("dev/lib/ModulerBuilder/prototype.includeModuleExportsContent.js") %>;
+  includeFunctionBodyTemplate = <%-modulerBuilder.includeModuleExportsContent("dev/lib/ModulerBuilder/prototype.includeFunctionBodyTemplate.js") %>;
+};

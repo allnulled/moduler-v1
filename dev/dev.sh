@@ -9,6 +9,7 @@ refrescador \
   -i "**.dist.*" \
   -i "**/dist.*" \
   -i "**/*.dist.*" \
+  -d 0 \
   -e "sh" \
   -e "ts" \
   -e "tsx" \

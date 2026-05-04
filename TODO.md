@@ -1,0 +1,11 @@
+- [ ] tener un global.onTouch.js
+   - [ ] se lanza con cualquier onTouch.js
+- [ ] Si el onTouch lo lanza un file que empieza por /src:
+   - [ ] tener y funcionar cualquier onTouch.js de fichero cambiado para arriba
+      - [ ] se lanza cuando hay un touch por debajo
+      - [ ] se sigue la misma lógica para arriba del onTouch.js también
+   - [ ] tener y funcionar cualquier fichero.entry.js de fichero cambiado para arriba
+      - [ ] se touchea cuando hay un touch por debajo
+      - [ ] se sigue la misma lógica para arriba del *.entry.js también
+   - [ ] tener y funcionar también los *.ts
+      - [ ] se compila normal para ts

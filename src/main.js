@@ -1,4 +1,8 @@
-module.exports = class Moduler {
+module.exports = (function(clazz) {
+  return Object.assign(clazz, {
+    global: new clazz(".")
+  });
+})(class Moduler {
   constructor(basedir) {
     this.basedir = basedir;
     this.modules = {};
@@ -17,4 +21,4 @@ module.exports = class Moduler {
     }
     return fetch(url).then(response => response.text());
   };
-};
+});

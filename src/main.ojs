@@ -1,8 +1,3 @@
-<% console.log(1, modulerBuilder.basedir) %>
-<% console.log(2, modulerBuilder.basedir) %>
-<% console.log(3, modulerBuilder.basedir) %>
-<% console.log(4, modulerBuilder.basedir) %>
-<% console.log(4, __dirname) %>
-<% console.log(4, __filename) %>
-
-module.exports = <%-modulerBuilder.includeModuleExportsContent("src/classes/Moduler.js")%>;
+module.exports = (function(clazz) {
+  return Object.assign(clazz, { global: new clazz(".") });
+})(<%-modulerBuilder.includeModuleExportsContent("src/classes/Moduler.js")%>);
