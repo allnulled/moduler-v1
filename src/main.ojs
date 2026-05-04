@@ -2,5 +2,7 @@
 <% console.log(2, modulerBuilder.basedir) %>
 <% console.log(3, modulerBuilder.basedir) %>
 <% console.log(4, modulerBuilder.basedir) %>
+<% console.log(4, __dirname) %>
+<% console.log(4, __filename) %>
 
 module.exports = <%-modulerBuilder.includeModuleExportsContent("src/classes/Moduler.js")%>;

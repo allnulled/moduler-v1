@@ -22,3 +22,7 @@ Cuando ya has instalado el addon, puedes:
    - `context` (de vscode)
    - `__dirname` (inyectado manualmente)
    - `__filename` (inyectado manualmente)
+
+Importantemente, el `modulerBuilder.basedir` será siempre:
+   - El primer directorio superior que contenga un `package.json`.
+   - O en su defecto, el directorio del mismo fichero que se está compilando.

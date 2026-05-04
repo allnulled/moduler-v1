@@ -57,6 +57,7 @@ module.exports = {
           document,
           context,
           __dirname: dirPath,
+          __filename: filePath,
         }, {
           filename: filePath
         });
