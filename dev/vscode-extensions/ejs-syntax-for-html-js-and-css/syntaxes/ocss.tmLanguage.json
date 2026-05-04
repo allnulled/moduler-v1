@@ -1,0 +1,28 @@
+{
+  "scopeName": "source.ejs.css",
+  "patterns": [
+    {
+      "include": "source.css"
+    },
+    {
+      "name": "meta.embedded.block.ejs",
+      "begin": "<%[-=]?",
+      "end": "%>",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.section.embedded.begin.ejs"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.section.embedded.end.ejs"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ]
+    }
+  ]
+}

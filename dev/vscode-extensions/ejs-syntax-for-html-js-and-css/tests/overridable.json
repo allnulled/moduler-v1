@@ -1,0 +1,8 @@
+{
+    "message": 900,
+    "data": {},
+    "whatever": <%=Some.data("wherever")%>,
+    "more": [{
+        "data": true
+    }]
+}

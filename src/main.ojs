@@ -1,0 +1,3 @@
+
+
+module.exports = <%-modulerBuilder.includeTemplate("src/classes/Moduler.js")%>;

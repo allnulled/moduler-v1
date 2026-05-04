@@ -1,0 +1,10 @@
+.sel-1,
+.sel-2,
+.sel-3 {
+    background: black;
+    /*<%-CssManager.mixin("whatever");%>*/
+    // <%-CssManager.whatever() %>
+    padding: 2px;
+    margin: 3px;
+    background-color: black;
+}

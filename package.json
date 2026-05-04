@@ -1,0 +1,22 @@
+{
+  "name": "moduler-v1",
+  "version": "1.0.0",
+  "main": "src/moduler-v1.api.dist.js",
+  "directories": {},
+  "scripts": {
+    "dev": "bash dev/dev.sh",
+    "build": "node dev/build.js",
+    "test": "node dev/test.js",
+    "vscode-extensions:dev": "bash dev/dev.sh",
+    "vscode-extensions:build": "node dev/vscode-extensions/build.js"
+  },
+  "keywords": [],
+  "author": "allnulled",
+  "license": "WTFPL",
+  "description": "",
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "fs-extra": "^11.3.4",
+    "js-beautify": "^1.15.4"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "clave1": "valor1",
+    "clave2": 2,
+    "clave3": [],
+    "clave4": <%=Soom.coger.algo("algun.lugar")%>
+}

@@ -1,0 +1,1 @@
+require(__dirname + "/../test/index.js");

@@ -1,0 +1,92 @@
+{
+  "name": "ejs-syntax-for-html-js-and-css",
+  "displayName": "EJS Syntax for HTML, JS & CSS",
+  "version": "0.0.1",
+  "repository": {},
+  "publisher": "allnulled",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./src/extension.dist.js",
+  "activationEvents": [
+    "onLanguage:ohtml",
+    "onLanguage:ojs",
+    "onLanguage:ocss",
+    "onLanguage:ojson"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ojs",
+        "aliases": [
+          "O-JS"
+        ],
+        "extensions": [
+          ".ojs"
+        ]
+      },
+      {
+        "id": "ocss",
+        "aliases": [
+          "O-CSS"
+        ],
+        "extensions": [
+          ".ocss"
+        ]
+      },
+      {
+        "id": "ohtml",
+        "aliases": [
+          "O-HTML"
+        ],
+        "extensions": [
+          ".ohtml"
+        ]
+      },
+      {
+        "id": "ojson",
+        "aliases": [
+          "O-JSON"
+        ],
+        "extensions": [
+          ".ojson"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ojs",
+        "scopeName": "source.ejs.js",
+        "path": "./syntaxes/ojs.tmLanguage.json"
+      },
+      {
+        "language": "ohtml",
+        "scopeName": "source.ejs.html",
+        "path": "./syntaxes/ohtml.tmLanguage.json"
+      },
+      {
+        "language": "ojson",
+        "scopeName": "source.ejs.json",
+        "path": "./syntaxes/ojson.tmLanguage.json"
+      },
+      {
+        "language": "ocss",
+        "scopeName": "source.ejs.css",
+        "path": "./syntaxes/ocss.tmLanguage.json"
+      },
+      {
+        "scopeName": "ejs.injection",
+        "path": "./syntaxes/ejs-injection.tmLanguage.json",
+        "injectTo": [
+          "text.html.basic",
+          "source.js",
+          "source.css",
+          "source.json"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "ejs": "^5.0.2"
+  }
+}

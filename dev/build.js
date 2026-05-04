@@ -1,0 +1,1 @@
+require(__dirname + "/lib/moduler-builder.js").from(`${__dirname}/..`).build();
